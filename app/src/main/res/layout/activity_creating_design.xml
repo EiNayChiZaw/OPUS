@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatingDesign">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:background="@drawable/cakee"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="241dp"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:shadowColor="@color/colorPrimary"
+                        android:text="Create your own cake"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHighlight="@color/colorPrimaryDark"
+                        android:textColorLink="@color/design_default_color_primary"
+                        android:textSize="30sp"
+                        app:fontFamily="casual" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="518dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="587dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="412dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@android:id/text1"
+                                android:layout_width="198dp"
+                                android:layout_height="match_parent"
+                                android:ellipsize="marquee"
+                                android:gravity="left"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="10dp"
+                                android:text="Select Cake Flavor: "
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                app:fontFamily="casual" />
+
+                            <Spinner
+                                android:id="@+id/simpleSpinner"
+                                android:layout_width="211dp"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:popupBackground="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView10"
+
+                                    android:layout_width="198dp"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Select Icing Flavor: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"
+                                    app:fontFamily="casual" />
+
+                                <Spinner
+                                    android:id="@+id/icing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:popupBackground="@color/colorPrimaryDark" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="198dp"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Select side decoration: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"
+                                    app:fontFamily="casual" />
+
+                                <Spinner
+                                    android:id="@+id/sidedeco"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="198dp"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Select Cake Filling: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"
+                                    app:fontFamily="casual" />
+
+                                <Spinner
+                                    android:id="@+id/filling"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:popupBackground="@color/colorPrimaryDark"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView"
+
+                                    android:layout_width="198dp"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:paddingLeft="20dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Select Icing Flavor: "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"
+                                    app:fontFamily="casual" />
+
+                                <Spinner
+                                    android:id="@+id/filling2"
+                                    android:layout_width="207dp"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible"
+                                    tools:layout_width="match_parent" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:text=" Select Top Decoration"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:fontFamily="casual" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onCheckboxClicked"
+                            android:paddingBottom="2dp"
+                            android:text="Flowers"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onCheckboxClicked"
+                            android:paddingBottom="2dp"
+                            android:text="Strawberries"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onCheckboxClicked"
+                            android:paddingBottom="2dp"
+                            android:text="Fruits"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onCheckboxClicked"
+                            android:paddingBottom="2dp"
+                            android:text="Import Photo"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@android:id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:text="Message to write on cake:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:fontFamily="casual" />
+
+                        <EditText
+                            android:id="@+id/editText5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textMultiLine" />
+
+                        <TextView
+                            android:id="@android:id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:text="Additional Comment"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:fontFamily="casual" />
+
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textMultiLine" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="518dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="211dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="Check Out"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimaryDark"
+                            android:text="Back"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
